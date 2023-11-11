@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch --env-file=.env src/server.ts",
+    "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
     "lint": "eslint src --ext .ts --fix",
     "test": "vitest"
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
     "@types/node": "^20.8.9",
+    "@types/supertest": "^2.0.16",
     "eslint": "^8.52.0",
     "supertest": "^6.3.3",
     "tsx": "^3.14.0",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "@fastify/cookie": "^9.1.0",
+    "dotenv": "^16.3.1",
     "fastify": "^4.24.3",
     "knex": "^3.0.1",
     "sqlite3": "^5.1.6",
