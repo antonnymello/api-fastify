@@ -1,8 +1,8 @@
-build
-
-database/app.db
+database/*.db
 
 node_modules
 
 .env
 .env.test
+
+build
